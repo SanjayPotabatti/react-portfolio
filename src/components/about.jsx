@@ -1,62 +1,66 @@
 import React from "react";
-import myImage from "../img/myImage.png";
 
 class About extends React.Component {
   constructor() {
     super();
     this.state = {
       skills: [
-        { id: "HTML5_skill", content: "HTML5", porcentage: "80%", value: "80" },
-        { id: "CSS3_skill", content: "CSS3", porcentage: "75%", value: "75" },
+        {
+          id: "HTML5_skill",
+          content: "Emotionall Balance",
+          porcentage: "80%",
+          value: "80",
+        },
+        { id: "CSS3_skill", content: "Caring", porcentage: "75%", value: "75" },
         {
           id: "JavaScript_skill",
-          content: "JavaScript",
-          porcentage: "90%",
-          value: "90"
+          content: "Priority to Friends",
+          porcentage: "95%",
+          value: "95",
         },
-        { id: "PHP_skill", content: "PHP", porcentage: "70%", value: "70" },
+        {
+          id: "PHP_skill",
+          content: "Self Respect",
+          porcentage: "50%",
+          value: "50",
+        },
         {
           id: "ReactJS_skill",
-          content: "ReactJS",
-          porcentage: "80%",
-          value: "80"
+          content: "Cooking",
+          porcentage: "20%",
+          value: "20",
         },
         {
           id: "Python_skill",
-          content: "Python",
-          porcentage: "75%",
-          value: "75"
+          content: "Sweeping (झाडू मारणे)",
+          porcentage: "99%",
+          value: "99",
         },
         {
           id: "VanillaJS_skill",
-          content: "VanillaJS",
+          content: "Benevolent",
           porcentage: "85%",
-          value: "85"
+          value: "85",
         },
         {
           id: "Wordpress_skill",
-          content: "Wordpress",
-          porcentage: "80%",
-          value: "80"
-        }
+          content: "कपड़े धोने",
+          porcentage: "99%",
+          value: "99",
+        },
       ],
       about_me: [
         {
           id: "first-p-about",
           content:
-            "Lorem ipsum pariatur consectetur laboris occaecat nulla aliqua irure ad deserunt duis. Eiusmod nulla cupidatat labore sint sit aute dolore irure nostrud ut incididunt. Anim laborum reprehenderit labore magna ut dolore quis irure. Labore ea duis deserunt ullamco irure fugiat deserunt ut nisi ea minim proident. Nisi consectetur do non magna duis aliqua minim minim veniam. In occaecat minim qui consequat elit mollit consectetur non id tempor. Amet adipisicing occaecat tempor culpa quis est duis."
+            "If I had to introduce Rupali, 4.9ft, 125kg fatty idiot, brainless girl on the earth. One whom everyone wants have a best friend in their life. Kind of a girl whoes always ready for the crazy things(If you know you know)     --Namrata",
         },
         {
           id: "second-p-about",
           content:
-            "Lorem ipsum pariatur consectetur laboris occaecat nulla aliqua irure ad deserunt duis. Eiusmod nulla cupidatat labore sint sit aute dolore irure nostrud ut incididunt. Anim laborum reprehenderit labore magna ut dolore quis irure. Labore ea duis deserunt ullamco irure fugiat deserunt ut nisi ea minim proident. Nisi consectetur do non magna duis aliqua minim minim veniam. In occaecat minim qui consequat elit mollit consectetur non id tempor. Amet adipisicing occaecat tempor culpa quis est duis."
+            "So here we go with countless memories, infinite concalls, parties, trips, from being shy to drinking with all the boyz, we have grown up together as a family. The one who has emotionally attached to all of us. One who cares for all leaving yourself behind. Even our babies are going to be best friends. Here,s to another year of friendship, laughter, and getting up to no good together! Hapiest Birthday Ruuuuuuuuuuupppppululululululululululu      -- dipak",
         },
-        {
-          id: "third-p-about",
-          content:
-            "Lorem ipsum pariatur consectetur laboris occaecat nulla aliqua irure ad deserunt duis. Eiusmod nulla cupidatat labore sint sit aute dolore irure nostrud ut incididunt. Anim laborum reprehenderit labore magna ut dolore quis irure. Labore ea duis deserunt ullamco irure fugiat deserunt ut nisi ea minim proident. Nisi consectetur do non magna duis aliqua minim minim veniam. In occaecat minim qui consequat elit mollit consectetur non id tempor. Amet adipisicing occaecat tempor culpa quis est duis."
-        }
-      ]
+      ],
     };
   }
 
@@ -87,7 +91,7 @@ class About extends React.Component {
                     </div>
                     <div className="skill-mf">
                       {/* <p className="title-s">Skill</p> */}
-                      {this.state.skills.map(skill => {
+                      {this.state.skills.map((skill) => {
                         return (
                           <React.Fragment key={skill.id}>
                             <span>{skill.content}</span>{" "}
@@ -112,9 +116,9 @@ class About extends React.Component {
                   <div className="col-md-6">
                     <div className="about-me pt-4 pt-md-0">
                       <div className="title-box-2">
-                        <h5 className="title-left">About Me</h5>
+                        <h5 className="title-left">About Rupali</h5>
                       </div>
-                      {this.state.about_me.map(content => {
+                      {this.state.about_me.map((content) => {
                         return (
                           <p className="lead" key={content.id}>
                             {content.content}
